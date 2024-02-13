@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "Bariol";
+    src: url("fonts/bariolbold.ttf");
+}
+@font-face {
+    font-family: "bariolthin1";
+    src: url("fonts/bariolthin1.ttf");
+}
+@font-face {
+    font-family: "cooper";
+    src: url("fonts/cooperm.ttf");
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: linear-gradient(white,rgb(234, 61, 234));
+    min-height: 100vh;
+}
+/* header*/
+h1{
+    float: left;
+    margin: 10px;
+    font-family: Bariol;
+    clear: both;
+}
+nav{
+    float: right;
+    margin-top: 10px;
+    font-family: bariolthin1;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+nav ul li a{
+   text-decoration: none; 
+   color: black;
+}
+nav ul li a:hover{ 
+    color: plum;
+ }
+ h1 a{
+    text-decoration: none; 
+    color: black;
+ }
+ h1 a:hover{
+    color:plum
+ }
+ /*main*/
+ main{
+    clear: both;
+    margin-left: 10px;
+    padding-top: 40px;
+ }
+ h3{
+    font-size: 50px;
+    font-family: cooper;
+ }
+ /*svg*/
+ svg{
+    width: 80%;
+    height: 80%;
+ }
+ .svg{
+    margin-left: 500px; 
+    margin-top: -150px;
+ }
+ #skate{
+    animation-name:skate ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+ }
+ @keyframes skate{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(25deg);
+    }
+ }
